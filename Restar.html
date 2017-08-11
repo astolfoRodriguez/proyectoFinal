@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <title>Sumar</title>
+        <meta charset="utf-8" />
+</head>
+
+<body>
+    <h1 style="color: #F90">Teclear Operandos a restar:</h1>
+<Script language = "JavaScript">
+
+function sumar()
+{ document.forms[0].nN3.value=eval(document.forms[0].nN1.value)+ eval(document.forms[0].nN2.value);
+}
+
+function restar()
+{ document.forms[0].nN3.value=eval(document.forms[0].nN1.value)- eval(document.forms[0].nN2.value);
+}
+
+function multiplicar()
+{ document.forms[0].nN3.value=eval(document.forms[0].nN1.value)* eval(document.forms[0].nN2.value);
+}
+
+function dividir()
+{
+ if (eval(document.forms[0].nN2.value)!=0)
+ {
+ document.forms[0].nN3.value=eval(document.forms[0].nN1.value)/eval(document.forms[0].nN2.value);
+ }
+ else
+ {
+ alert("No divide por cero");
+ }
+}
+</Script>
+
+<FORM ACTION= "mailto: msbianchi@latinmail.com" method= "post">
+Operando Uno:<INPUT TYPE="TEXT" NAME="nN1" SIZE="10">
+<BR><br>
+Operando Dos:<INPUT TYPE="TEXT" NAME="nN2" SIZE="10">
+<BR><BR>
+ <INPUT TYPE= "BUTTON" NAME="BTN1" VALUE= "Mostrar Resultado" ONCLICK= "restar()"> 
+  <BR><BR>     
+Resta:<INPUT TYPE="TEXT" NAME="nN3" SIZE="10">
+<BR><BR>
+
+
+<!--<INPUT TYPE= "BUTTON" NAME="BTN2" VALUE= "-" onclick= "restar()">
+<INPUT TYPE= "BUTTON" NAME="BTN3" VALUE= "*" onclick= "multiplicar()">
+<INPUT TYPE= "BUTTON" NAME="BTN4" VALUE= "/" onclick= "dividir()">
+<INPUT TYPE= "SUBMIT" NAME="BTN5" VALUE= "ENVIAR">
+<BR> PRESIONE AQUÍ PARA ABRIR LA CALC<A HREF= "C:/WINDOWS/CALC.EXE"> ABRIR </A>-->
+</FORM>   
+
+
+
+  
+    <a href="index.html">Return a home page</a>
+    
+</body>
+</html>
